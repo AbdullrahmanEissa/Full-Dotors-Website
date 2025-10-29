@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دكتور ماجد الشناوي | Elshenawy Life Clinic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #007C83; /* لون أخضر أزرق من اللوجو */
+      --accent-color: #D89B36; /* لون ذهبي من اللوجو */
+      --bg-color: #f9fbfa;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      background-color: var(--bg-color);
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem 3.5rem;
+      position: relative;
+    }
+    header img {
+      width: 130px;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .about, .form-section, .location {
+      background-color: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+    .about h2, .form-section h2, .location h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea, button {
+      font-family: 'Cairo', sans-serif;
+      font-size: 1rem;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    button {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #00666b;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: var(--primary-color);
+      color: white;
+      margin-top: 3rem;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .contact-info a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      height: 300px;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebd5a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.ibb.co/KnYH2s6/unnamed-removebg-preview.png" alt="Elshenawy Life Clinic Logo" />
+    <h1>دكتور ماجد الشناوي</h1>
+    <p>استشاري القلب والشرايين، الباطنة، السمنة، السكر، والتغذية العلاجية</p>
+  </header>
+
+  <div class="container">
+    <section class="about">
+      <h2>عن العيادة</h2>
+      <p>عيادة Elshenawy Life Clinic تهدف إلى تقديم رعاية طبية متكاملة في مجالات القلب، الباطنة، السمنة، السكر، والتغذية العلاجية، تحت إشراف د. ماجد الشناوي بخبرة تمتد لأكثر من ٢٠ عامًا. نؤمن بأن الصحة أسلوب حياة متكامل يبدأ من العناية بالقلب وينتهي بالتوازن الغذائي والنفسي.</p>
+    </section>
+
+    <section class="form-section">
+      <h2>احجز موعدك الآن</h2>
+      <form action="https://api.whatsapp.com/send?phone=201062421416" method="get" target="_blank">
+        <input type="text" name="name" placeholder="الاسم الكامل" required />
+        <input type="tel" name="phone" placeholder="رقم الهاتف" required />
+        <textarea name="text" rows="4" placeholder="أكتب استفسارك أو موعدك المفضل"></textarea>
+        <button type="submit">إرسال عبر واتساب</button>
+      </form>
+      <div class="contact-info">
+        <p>للتواصل مباشرة: <a href="tel:+201062421416">+20 10 6242 1416</a></p>
+        <p>تابعنا على <a href="https://www.facebook.com/profile.php?id=100085422890114" target="_blank">فيسبوك</a></p>
+        <p><a class="whatsapp-btn" href="https://wa.me/201062421416" target="_blank">راسلنا على واتساب</a></p>
+      </div>
+    </section>
+
+    <section class="location">
+      <h2>موقع العيادة</h2>
+      <p>العنوان: <a href="https://maps.app.goo.gl/9Q3WRE96K2iqrNfeA" target="_blank">عرض على الخريطة</a></p>
+      <iframe src="https://maps.google.com/maps?q=9Q3WRE96K2iqrNfeA&output=embed" allowfullscreen></iframe>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Elshenawy Life Clinic - جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
